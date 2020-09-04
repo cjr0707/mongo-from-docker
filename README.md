@@ -8,12 +8,12 @@ docker push cjr0707/spider-mongo:4.4.0
 # 运行命令
 ```docker
 docker run -d --name spider-mongo \
-    -v /data/db/mongo:/data/db \
+    -v /data/mongo:/data/db \
     -p 27017:27017 cjr0707/spider-mongo:4.4.0
 # 或者加上restart
 docker run -d --name spider-mongo \
     --restart always \
-    -v /data/db/mongo:/data/db \
+    -v /data/mongo:/data/db \
     -p 27017:27017 cjr0707/spider-mongo:4.4.0
 ```
 
